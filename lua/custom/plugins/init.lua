@@ -265,6 +265,14 @@ local plugins = {
       require('custom.config.keymaps').copilotChat()
     end,
   },
+
+  {
+    'OXY2DEV/markview.nvim',
+    lazy = false,
+    config = function()
+      require('markview').setup()
+    end,
+  },
 }
 
 return plugins
