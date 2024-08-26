@@ -9,6 +9,9 @@ vim.o.ts = 4
 vim.o.sts = 4
 vim.o.sw = 4
 
+-- set 80 characters width
+vim.o.colorcolumn = '80'
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -50,7 +53,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
 
 -- [[ Diagnostoc symbols ]]
 vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
