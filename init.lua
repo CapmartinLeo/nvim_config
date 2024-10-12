@@ -124,7 +124,7 @@ local servers = {
   -- servers
   clangd = {},
   pyright = {},
-  tsserver = {},
+  ts_ls = {},
   eslint = {},
   html = { filetypes = { 'html', 'twig', 'hbs', 'vue' } },
   cssls = {},
@@ -133,6 +133,7 @@ local servers = {
   yamlls = {},
   omnisharp = {},
   lemminx = {},
+  dockerls = {},
 
   lua_ls = {
     Lua = {
