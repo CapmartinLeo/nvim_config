@@ -53,6 +53,9 @@ return {
     c = {
       require('formatter.filetypes.c').clangformat,
     },
+    cpp = {
+      require('formatter.filetypes.cpp').clangformat,
+    },
     cs = {
       require('formatter.filetypes.cs').dotnetformat,
     },
