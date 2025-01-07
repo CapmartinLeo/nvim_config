@@ -62,6 +62,9 @@ return {
     yaml = {
       require('formatter.filetypes.yaml').prettier,
     },
+    sql = {
+      require('formatter.filetypes.sql').sqlfluff,
+    },
     ['*'] = {
       require('formatter.filetypes.any').remove_trailing_whitespace,
     },
