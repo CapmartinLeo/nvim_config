@@ -252,7 +252,7 @@ local plugins = {
 
   {
     'CopilotC-Nvim/CopilotChat.nvim',
-    branch = 'canary',
+    branch = 'main',
     dependencies = {
       { 'zbirenbaum/copilot.lua' }, -- or github/copilot.vim
       { 'nvim-lua/plenary.nvim' }, -- for curl, log wrapper
@@ -273,6 +273,14 @@ local plugins = {
       require('markview').setup()
     end,
   },
+  
+  {
+    'f-person/git-blame.nvim',
+    event = 'VeryLazy',
+    config = function ()
+      require('gitblame').setup()
+    end
+  }
 }
 
 return plugins
