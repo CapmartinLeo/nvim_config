@@ -1,10 +1,11 @@
 return {
   defaults = {
-	mappings = {
-	  i = {
-		['<C-u>'] = false,
-		['<C-d>'] = false,
-	  },
-	},
+    path_display = { "smart" },
+    mappings = {
+      i = {
+	['<C-u>'] = false,
+	['<C-d>'] = false,
+      },
+    },
   },
 }

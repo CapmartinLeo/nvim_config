@@ -5,9 +5,9 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.number = true
 
-vim.o.ts = 4
-vim.o.sts = 4
-vim.o.sw = 4
+vim.o.ts = 2
+vim.o.sts = 2
+vim.o.sw = 2
 
 -- set 80 characters width
 vim.o.colorcolumn = '80'
@@ -29,6 +29,12 @@ vim.o.undofile = true
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
+
+-- folding
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.o.foldlevel = 99 -- Using ufo provider need a large value
+-- vim.o.foldcolumn = '1'
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
