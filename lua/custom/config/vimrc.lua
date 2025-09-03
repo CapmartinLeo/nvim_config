@@ -12,6 +12,9 @@ vim.o.sw = 2
 -- set 80 characters width
 vim.o.colorcolumn = '80'
 
+-- set no wrap
+vim.wo.wrap = false
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 

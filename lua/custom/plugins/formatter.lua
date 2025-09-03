@@ -1,10 +1,10 @@
 local utils = require 'formatter.util'
 local formatterGroup = vim.api.nvim_create_augroup('FormatAutogrop', { clear = false })
-vim.api.nvim_create_autocmd('BufWritePost', {
-  command = 'FormatWrite',
-  group = formatterGroup,
-  pattern = '*',
-})
+-- vim.api.nvim_create_autocmd('BufWritePost', {
+--   command = 'FormatWrite',
+--   group = formatterGroup,
+--   pattern = '*',
+-- })
 
 return {
   filetype = {
