@@ -87,6 +87,7 @@ local plugins = {
         omnisharp = {},
         lemminx = {},
         dockerls = {},
+        qmlls = {},
 
         lua_ls = {
           Lua = {
